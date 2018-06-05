@@ -1,0 +1,11 @@
+<!--pages/basic_nursing/basic_nursing.wxml-->
+<scroll-view class='root' >
+  <block wx:for="{{list}}">
+    <view class='widgets-item '>
+      <navigator url='../detail_list/detail_list?arg={{item.id}}' class='widgets-info'>
+        <text class='widgets-info-name'>{{item.name}}</text>
+        <image class='widgets-info-img' src='/images/arrowright.png' mode='aspectFill' />
+      </navigator>
+    </view>
+  </block>
+</scroll-view>
