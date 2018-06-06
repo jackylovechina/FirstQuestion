@@ -43,11 +43,40 @@ Page({
         answer: 'd',
       },
     ],
-    star_:'star-empty.png',
+
 
   },
   starTap: function (e) {
-    console.log(e)
+    //console.log(e)
+    if (this.data.question.star) {
+      this.setData({
+        star_: '/images/star-empty.png',
+        question: {
+          id: '',
+          title: '护士需要帮助人群解决与健康相关的问题，以下哪一项说法不确切（	）。',
+          cA: '减轻痛苦',
+          cB: '维持健康',
+          cC: '保护人类',
+          cD: '促进健康',
+          answer: 'c',
+          star: false,
+        },
+      });
+    } else {
+      this.setData({
+        star_: '/images/star-full.png',
+        question: {
+          id: '',
+          title: '护士需要帮助人群解决与健康相关的问题，以下哪一项说法不确切（	）。',
+          cA: '减轻痛苦',
+          cB: '维持健康',
+          cC: '保护人类',
+          cD: '促进健康',
+          answer: 'c',
+          star: true,
+        },
+      });
+    }
   },
   /**
    * 生命周期函数--监听页面加载
@@ -71,9 +100,17 @@ Page({
           answer: 'c',
           star: true,
         },
-        
+
       })
-      
+      if (this.data.question.star) {
+        this.setData({
+          star_: '/images/star-full.png',
+        })
+      } else {
+        this.setData({
+          star_: '/images/star-empty.png',
+        })
+      }
     }
   },
 

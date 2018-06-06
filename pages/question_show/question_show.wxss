@@ -29,11 +29,50 @@ page {
   padding-left: 30rpx;
   bottom: 30rpx;
   position: fixed;
+  flex-direction: row;
+  display: flex;
 }
 
-.star{
+.widget_star {
+  display: flex;
+  padding: 15rpx;
+  align-items: center;
+  flex-direction: row;
+  font-size: 35rpx;
+}
+
+.star {
   width: 50rpx;
   height: 50rpx;
+  flex: 1;
 }
 
+.star_text {
+  padding: 10rpx;
+}
 
+.do_question {
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pre_question {
+  background-color: #3cf;
+  margin: 1rpx;
+  padding-left: 70rpx;
+  padding-right: 70rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.next_question {
+  background-color: #3cf;
+  margin: 1rpx;
+  padding-left: 70rpx;
+  padding-right: 70rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}

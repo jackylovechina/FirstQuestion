@@ -1,7 +1,7 @@
 <!--pages/question_show/question_show.wxml-->
 <view class='root'>
   <view>{{type}}</view>
-  <block >
+  <block>
     <view class='widgets_item'>
       <view class='widgets_item_title'>
         <text>{{question.title}}</text>
@@ -31,10 +31,17 @@
     </view>
   </block>
   <view class='bottom'>
-    <block >
-      <image id='star' class='star' bindtap='starTap' src='/images/{{star_}}' ></image>
-    </block>
-    
-    <text>empty</text>
+    <view class='widget_star' bindtap='starTap'>
+      <image id='star' class='star' src='{{star_}}'></image>
+      <text class='star_text'>收藏</text>
+    </view>
+    <view class='do_question'>
+      <view class='pre_question'>
+        <text>上一题</text>
+      </view>
+      <view class='next_question'>
+        <text>下一题</text>
+      </view>
+    </view>
   </view>
 </view>
