@@ -1,0 +1,39 @@
+/* pages/question_show/question_show.wxss */
+
+page {
+  height: 100%;
+}
+
+.root {
+  height: 100%;
+  position: absolute;
+}
+
+.widgets_item {
+  margin: 10rpx;
+}
+
+.widgets_item_title {
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  font-size: 40rpx;
+}
+
+.widgets_item_choice {
+  padding-bottom: 5rpx;
+  padding-top: 5rpx;
+  font-size: 35rpx;
+}
+
+.bottom {
+  padding-left: 30rpx;
+  bottom: 30rpx;
+  position: fixed;
+}
+
+.star{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+

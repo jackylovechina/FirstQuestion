@@ -1,0 +1,40 @@
+<!--pages/question_show/question_show.wxml-->
+<view class='root'>
+  <view>{{type}}</view>
+  <block >
+    <view class='widgets_item'>
+      <view class='widgets_item_title'>
+        <text>{{question.title}}</text>
+      </view>
+      <radio-group>
+        <view class='widgets_item_choice'>
+          <radio>
+            <text>A:{{question.cA}}</text>
+          </radio>
+        </view>
+        <view class='widgets_item_choice'>
+          <radio>
+            <text>B:{{question.cB}}</text>
+          </radio>
+        </view>
+        <view class='widgets_item_choice'>
+          <radio>
+            <text>C:{{question.cC}}</text>
+          </radio>
+        </view>
+        <view class='widgets_item_choice'>
+          <radio>
+            <text>D:{{question.cD}}</text>
+          </radio>
+        </view>
+      </radio-group>
+    </view>
+  </block>
+  <view class='bottom'>
+    <block >
+      <image id='star' class='star' bindtap='starTap' src='/images/{{star_}}' ></image>
+    </block>
+    
+    <text>empty</text>
+  </view>
+</view>

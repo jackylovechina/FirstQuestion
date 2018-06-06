@@ -4,7 +4,8 @@
     "pages/home/home",
     "pages/logs/logs",
     "pages/basic_nursing/basic_nursing",
-    "pages/detail_list/detail_list"
+    "pages/detail_list/detail_list",
+    "pages/question_show/question_show"
   ],
   "window":{
     "backgroundTextStyle":"light",

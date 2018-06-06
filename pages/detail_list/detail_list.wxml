@@ -2,7 +2,7 @@
 <view class='root'>
   <view class='section'>{{a}}</view>
   <block wx:for="{{list}}">
-    <navigator url=''>
+    <navigator url='../question_show/question_show?type={{item.id}}'>
       <view class='widgets_info'>
         <view class='widgets_type_info'>
           <image class='widgets_type_img' src='/images/point.png'></image>
